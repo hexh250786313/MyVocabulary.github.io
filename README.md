@@ -27,5 +27,5 @@
 值得注意的是，在洗牌（Shuffle）状态下打开的具体单词窗口是不能删除和修改单词信息的  
 
 ### 下载地址 and 怎么用？
-百度网盘：链接：https://pan.baidu.com/s/1cVLdNR3dtcjrXNZPxikGTA 密码：hz3u  
+百度网盘：链接：https://pan.baidu.com/s/1kzZG7JGJbOCenkU_ajHdWg 密码：z3s6  
 先配置JAVA的运行环境吧，然后点击目录下的"run.bat"就能启动了  
