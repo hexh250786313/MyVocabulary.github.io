@@ -79,6 +79,7 @@ public class MyWordViewer {
 		menuBar.add(fileMenu);
 		menuBar.add(optionMenu);
 		
+		title.add("#");
 		title.add("Word");
 		title.add("Translation");
 		
@@ -102,7 +103,7 @@ public class MyWordViewer {
         
 		frame.setJMenuBar(menuBar);
         frame.add(jp);
-        frame.setSize(new Dimension(280,300));
+        frame.setSize(new Dimension(310, 297));
         frame.setResizable(false);
         //frame.setMinimumSize(new Dimension(200, 300));
         frame.setLocationRelativeTo(null);
@@ -317,6 +318,7 @@ public class MyWordViewer {
 	private void setVocabulary() {
 		
 		data = new Vector<Vector<String>>();
+		int count = 1;
 		
 		while(listIterator.hasNext()) {
 			
@@ -329,10 +331,12 @@ public class MyWordViewer {
 			for(String trans : myvocabulary.getTranslation()) {
 				str = str + trans +  "; " ;
 			}
+			oneData.add(count + "");
 			oneData.add(myvocabulary.getWord());
 			oneData.add(str);
 	
 			data.add(oneData);
+			count ++;
 		}
 	}
 
@@ -483,11 +487,9 @@ public class MyWordViewer {
 	private void setTableSize() {
 		
 		table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
-		table.getColumnModel().getColumn(0).setPreferredWidth(80);
-		table.getColumnModel().getColumn(1).setPreferredWidth(181); //181, 166
+		table.getColumnModel().getColumn(0).setPreferredWidth(30);
+		table.getColumnModel().getColumn(1).setPreferredWidth(80);
+		table.getColumnModel().getColumn(2).setPreferredWidth(166); //181, 166
 		//table.getColumnModel().getColumn(0).setResizable(false);
-		
 	}
-	
-	
 }
